@@ -12,6 +12,8 @@ def all_perms(str):
                 yield perm[:i] + str[0:1] + perm[i:]
 
 
-listT='abcdefghijklmnopqrstuvwxyz'
-for p in all_perms(listT):
+listT='abcd'
+listt = listT.upper()
+listMain=str(listT)+str(listt)
+for p in all_perms(listMain):
     print p
